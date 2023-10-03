@@ -1,0 +1,237 @@
+/* Body */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("images/body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  background-attachment:fixed;
+}
+
+ 
+/* Navigation bar*/
+
+
+#span {
+  margin-top: 15px;
+  margin-left: 30px;
+  float: left;
+  color: white;
+  
+}
+nav {
+  background-color: black;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+ul.navigationelements {
+  list-style-type: none;
+}
+li.navigationelements {
+  float: right;
+  margin-top: 0px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+li.navigationelements a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+}
+li.navigationelements a:hover{
+  background-color:grey;
+}
+li.navigationelements a:active{
+opacity: 0.5;
+}
+.contactbutton {
+  float: right;
+  margin-left: 10px;
+  margin-right: 60px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  background-color: rgb(255, 69, 18);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  font: bold;
+  transition: background-color 0.15s;
+  vertical-align: top;
+}
+.contactbutton:hover {
+  background-color: rgb(255, 109, 68);
+}
+.contactbutton:active {
+  opacity: 0.5;
+}
+
+/* Header */
+
+h1 {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
+/* My Image */
+
+
+div.developer {
+  float: left;
+  margin-top: 0px;
+}
+img.developer{
+  max-height: 500px;
+  border-radius: 50%;
+}
+
+
+/* intro */
+
+
+.intro {
+  margin-left: 400px;
+  margin-right: 70px;
+  text-align: center;
+  font-size: large;
+}
+
+
+ /* Buttonns  */
+
+
+#hirebutton {
+  margin-left: 430px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  background-color: rgb(255, 30, 18);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font: bold;
+  transition: background-color 0.15s;
+  vertical-align: top;
+}
+#hirebutton:hover {
+  background-color: rgb(255, 109, 68);
+}
+#hirebutton:active {
+  opacity: 0.5;
+}
+#workbutton {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  background-color: rgb(68, 90, 252);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font: bold;
+  transition: background-color 0.15s;
+  vertical-align: top;
+}
+#workbutton:hover {
+  background-color: rgb(132, 146, 252);
+}
+#workbutton:active {
+  opacity: 0.5;
+}
+
+
+/* Skills  */
+
+
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #dfa7f0;
+  border: none;
+  box-shadow: 1px 1px 2px #af83ae;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #be71de;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #ab85a7;
+}
+
+ul.skills{
+  margin-left: 380px;
+  list-style-type: none;
+  
+}
+li.skills{
+  margin-bottom: 10px;
+}
+
+
+/* Projects  */
+
+
+.pro {
+  margin-left: 200px;
+  margin-right: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+ul.projects{
+  margin-left: 380px;
+  list-style-type: none;
+  margin-top: -20px;
+}
+li.projects{
+  margin-bottom:10px ;
+}
+
+
+/* Contact  */
+
+
+.contact{
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -8px;
+}
+.contact > p {
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+}
+.contact > span {
+  margin-left:630px;
+  font-size: small;
+}
+.socialmediabuttons{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
