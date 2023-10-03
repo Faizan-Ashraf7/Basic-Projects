@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="color:brown;text-align: center;">IMAGE SLIDER</h1>
+    <div class="slider-container">
+      <img class="slider-image" src="image/obito.jpg" alt="Image 1" />
+      <img class="slider-image" src="image/kisame.jpg" alt="Image 2" />
+      <img class="slider-image" src="image/sasori.jpg" alt="Image 3" />
+      <img src="image/pain.jpg" alt="Image 4" class="slider-image" />
+      <img src="image/hidan.jpg" alt="Image 5" class="slider-image" />
+      <img src="image/konan.jpg" alt="Image 6" class="slider-image" />
+      <img src="image/deidara.jpg" alt="Image 7" class="slider-image" />
+      <img src="image/itachi.jpg" alt="Image 8" class="slider-image" />
+    </div >
+    <div class="buttons">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+</div>
+    <script>
+      // Get references to DOM elements
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const images = document.getElementsByClassName("slider-image");
+      let currentIndex = 0;
+
+      // Show the initial image
+      images[currentIndex].style.transform = "translateX(0)";
+
+      // Add event listeners to buttons
+      prevBtn.addEventListener("click", showPreviousImage);
+      nextBtn.addEventListener("click", showNextImage);
+
+      function showPreviousImage() {
+        // images[currentIndex].style.transform = "translateX(100%)";
+        images[currentIndex].style.transform = "translateX(-100%)";
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        images[currentIndex].style.transform = "translateX(0)";
+        // images[currentIndex].style.zIndex = "1";
+        // images[(currentIndex + 1 + image.length) % image.length].style.zIndex = "0";
+        updateZIndex();
+
+      }
+
+      function showNextImage() {
+        // images[currentIndex].style.transform = "translateX(-100%)";
+        images[currentIndex].style.transform = "translateX(100%)";
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.transform = "translateX(0)";
+        // images[currentIndex].style.zIndex = "1";
+        // images[(currentIndex + 1 + image.length) % image.length].style.zIndex = "0";
+        updateZIndex();
+      }
+      function updateZIndex() {
+        for(let i = 0; i < images.length; i++){
+        if (i == currentIndex) {
+          images[i].style.zIndex = "1";
+        }
+        else{
+          images[i].style.zIndex ="0";
+        }
+      }
+      }
+    </script>
+  </body>
+</html>
