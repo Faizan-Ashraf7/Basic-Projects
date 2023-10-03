@@ -1,0 +1,91 @@
+/* BODY  */
+body{
+  background-color: black;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HEADING  */
+header{
+  text-align: center;
+
+}
+
+
+/* VIDEO  */
+#vid{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border: none;
+}
+video{
+  border-radius: 10%;
+  border: none;
+}
+
+
+/* IMAGE  */
+.elon{
+  float: left;
+  height: 400px;
+  border-radius: 50%;
+  margin-top: -20px;
+  margin-right: 20px;
+  padding-top: 0%;
+}
+figcaption.elon{
+  margin-top: 405px;
+  margin-left: -210px;
+  margin-right: auto;
+  padding: auto;
+
+}
+
+
+/* EDUCATION  */
+h2.education {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul.education li.education{
+  margin-left: 335px;
+  margin-right: auto;
+  padding-top: 20px;
+  font-size: larger;
+}
+
+
+/* ACHIEVEMENTS */
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #393838;
+  border: none;
+  box-shadow: 1px 1px 2px #1c191c;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #393838;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #1c191c;
+}
+
+ul.achievements{
+  margin-left: 380px;
+  list-style-type: none;
+  
+}
+li.achievements{
+  margin-bottom: 10px;
+}
+.socialmediabuttons{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
