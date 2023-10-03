@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit Converter</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+  <link rel="stylesheet" href="conversion.css">
+</head>
+
+<body style="background-color: black;">
+  <div id="wholepage">
+    <h1 style="color: firebrick;">UNIT CONVERSION</h1>
+    <hr style="opacity: 0.3;">
+    <script src="conversion.js"></script>
+    <p>
+    <h3 style="color: darkcyan;">Length Converter</h3>
+    <label for="inputfeet">Feet</label>
+    <input id="inputfeet" type="number" placeholder="Feet" oninput="lengthConverter(this.value)"
+      onchange="lengthConverter(this.value)">
+    </p>
+    <p>
+      Meters: <span id="outputMeters"></span>
+    </p>
+    <p>
+      
+      Centimeters: <span id="outputCM"> </span>
+    </p>
+    <hr style="opacity: 0.3;">
+    <p>
+      <h3 style="color: darkcyan;"> Time Converter</h3>
+      <label for="inputhours">Hours:</label>
+      <input id="inputhours" type="number" placeholder="Hours" oninput="timeConverter(this.value)"
+      onchange="timeConverter(this.value)">
+    </p>
+    <p>
+      Seconds: <span id="outputSeconds"></span>
+    </p>
+    <hr style="opacity: 0.3;">
+    <h3 style="color: darkcyan;">Weight Converter</h3>
+    <p>
+      <label for="inputkg">Kgs:</label>
+      <input id="inputkg" type="number" placeholder="kgs" oninput="weightConverter(this.value)"
+      onchange="weightConverter(this.value)">
+    </p>
+    <p>
+      Pounds: <span id="outputPounds"></span>
+    </p>
+    <hr style="opacity: 0.3;">
+
+    <p>
+    <!-- <h3>Temperature Converter</h3>
+    <label for="inputcelsius">Celsius:</label>
+    <input id="imputcelsius" type="number" placeholder="celsius" oninput="tempConverter(this.value)"
+      onchange="tempConverter(this.value)">
+    </p>
+    <p>
+      Kelvin: <span id="outputKelvin"></span>
+    </p>
+    <p>
+      Fahrenheit: <span id="outputFahrenheit"></span>
+    </p> -->
+  </div>
+
+</body>
+
+</html>
