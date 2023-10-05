@@ -32,6 +32,10 @@ body {
   border-radius: 10rem;
   cursor: pointer;
 }
+.show-modal:hover{
+  border: solid black 3px;
+  color: #998c8c;
+}
 
 .close-modal {
   position: absolute;
@@ -56,7 +60,7 @@ p {
 /* -------------------------- */
 /* CLASSES TO MAKE MODAL WORK */
 .hidden {
-  display: none;
+  display:none;
 }
 
 .modal {
