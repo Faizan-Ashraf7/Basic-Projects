@@ -32,7 +32,7 @@ body {
   border-radius: 10rem;
   cursor: pointer;
 }
-.show-modal:hover{
+.show-modal:hover,.close-modal:hover{
   border: solid black 3px;
   color: #998c8c;
 }
