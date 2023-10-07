@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Mycustomfont';
+    src: url('Sigmar-Regular.ttf');
+  }
+  body {
+    font-family: 'MyCustomFont', sans-serif;
+  }
+  
+  #static {
+    position: static;
+    background-color: #ccc;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    float: left;
+  }
+ 
+  #relative {
+    position: relative;
+    background-color: #f00;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    top: 50px;
+    left: 50px;
+  }
+  #absolute {
+    position: absolute;
+    background-color: #0f0;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    top: 50px;
+    right: 50px;
+  }
+
+  #fixed {
+    position: fixed;
+    background-color: rgb(119, 0, 255);
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    bottom: 50px;
+    right: 50px;
+  }
+  #sticky {
+    position: sticky;
+    background-color: rgb(255, 123, 0);
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    top: 20px;
+  }
