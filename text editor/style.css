@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: #333;
+  height: 600px;
+  width: 700px;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* EDITING ICONS  */
+.icons {
+  padding:1.9rem;
+  margin-left: 1vw;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px  #ac619b;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
+  overflow: hidden;
+}
+
+/* SIZE CONTROLLER */
+.size {
+  border: none;
+  padding: 0px 5px;
+  color: #0c0a0a;
+}
+input[type="number"] {
+  border: none;
+  outline: none;
+  border-radius: 15%;
+  height: 50px;
+  width: 60px;
+  color: #0c0a0a;
+  font-size: 25px;
+  background-image: linear-gradient(to top left, #251129 0%, #bf2e34 100%);
+  padding: 0px;
+}
+
+/* COLOR CONTROLLER  */
+.color {
+  border: none;
+  padding: 5px 5px 0px 5px;
+  color: #0c0a0a;
+}
+input[type="color"] {
+  border: none;
+  outline: none;
+  border-radius: 15%;
+  height: 50px;
+  width: 60px;
+  color: #0c0a0a;
+  font-size: 25px;
+  padding: 0px;
+}
+
+/* FONT  */
+.font {
+  border: none;
+  padding: 5px 5px 0px 5px;
+  color: #0c0a0a;
+}
+select[id="font-name"] {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  color: #0c0a0a;
+  font-size: 25px;
+  padding: 0px;
+}
+
+/* UNDO REDO  */
+.do {
+  margin: 0px;
+  padding-top: 41px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+/* ADD TEXT  */
+.text{
+  border: none;
+  margin-top: 10px;
+  padding: 5px 5px 0px 5px;
+  color: #0c0a0a;
+}
+#add{
+  border: none;
+  border-radius: 200px;
+  height: 25px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+#add::placeholder{
+  text-align: center;
+}
+
+/* TEXT SPACE  */
+.textspace {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 80%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- UNDO REDO -->
+      <div class="do">
+        <button id="undo" onclick="undo()"><i class="fa-solid fa-rotate-left"></i></button>
+        <button id="redo" onclick="redo()"><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+
+      <!-- TEXT SPACE  -->
+      <div class="textspace" contenteditable='true'></div>
+
+      <div class="icons">
+        <!-- SIZE CONTROLLER -->
+        <div class="size">
+          SIZE
+          <br />
+          <input
+            type="number"
+            id="font-size"
+            min="1"
+            max="100"
+            value="16"
+            onchange="fontSize()"
+          />
+        </div>
+        <hr size="1px" color="black" />
+
+        <!-- COLOR CONTROLLER -->
+        <div class="color">
+          COLOR
+          <br />
+          <input type="color" id="font-color" onchange="fontColor()" />
+        </div>
+        <hr size="1px" color="black" />
+
+        <!-- FONT CONTROLLER  -->
+        <div class="font">
+          FONT
+          <br />
+          <select id="font-name" onchange="fontName()">
+            <option value="Arial">Default</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Tahoma">Tahoma</option>
+          </select>
+        </div>
+        <hr size="1px" color="black" />
+
+        <!-- ADD TEXT  -->
+        <div class="text">
+          TEXT
+          <br />
+          <textarea id="add" placeholder="Add text"></textarea>
+        </div>
+        <hr size="1px" color="black" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
